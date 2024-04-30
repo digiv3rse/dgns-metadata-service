@@ -15,7 +15,7 @@
 
 Request (example)
 
-https://metadata.dgns.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/42219085255511335250589442208301538195142221433306354426240614732612795430543/
+https://metadata.digiv3rse.xyz/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/42219085255511335250589442208301538195142221433306354426240614732612795430543/
 
 ### Response (example)
 
@@ -60,14 +60,14 @@ https://metadata.dgns.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85
   "segment_length": 4,
   "url": "https://app.dgns.domains/name/nick.digi",
   "version": 0,
-  "background_image": "https://metadata.dgns.domains/mainnet/avatar/nick.digi",
-  "image": "https://metadata.dgns.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image",
-  "image_url": "https://metadata.dgns.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image"
+  "background_image": "https://metadata.digiv3rse.xyz/mainnet/avatar/nick.digi",
+  "image": "https://metadata.digiv3rse.xyz/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image",
+  "image_url": "https://metadata.digiv3rse.xyz/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image"
 }
 
 ```
 
-More info and list of all endpoints: https://metadata.dgns.domains/docs
+More info and list of all endpoints: https://metadata.digiv3rse.xyz/docs
 
 
 ## How to setup
