@@ -10,7 +10,7 @@ import {
 }                           from '../base';
 import { 
   IPFS_GATEWAY, 
-  OPDGNSEA_API_KEY 
+  OPENSEA_API_KEY 
 }                           from '../config';
 import { abortableFetch }   from '../utils/abortableFetch';
 
@@ -52,8 +52,8 @@ export class AvatarMetadata {
     this.avtResolver = new AvatarResolver(provider, 
       { 
         ipfs: IPFS_GATEWAY, 
-        apiKey: { opensea: OPDGNSEA_API_KEY },
-        urlDenyList: [ 'metadata.dgns.domains' ]
+        apiKey: { opensea: OPENSEA_API_KEY },
+        urlDenyList: [ 'metadata.digiv3rse.xyz' ]
       }
     );
     this.uri = uri;
@@ -139,7 +139,7 @@ export class AvatarMetadata {
       if (metadata.image_url) {
         metadata.image = metadata.image_url;
       } else if (metadata.image_data) {
-        metadata.image = `https://metadata.dgns.domains/${networkName}/avatar/${this.uri}`;
+        metadata.image = `https://metadata.digiv3rse.xyz/${networkName}/avatar/${this.uri}`;
       } else {
         throw new TextRecordNotFound(
           'There is no avatar set under given address',

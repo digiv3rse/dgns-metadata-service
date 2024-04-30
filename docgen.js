@@ -55,7 +55,7 @@ const doc = {
       $image_url: 'URL of DGNS NFT image',
     },
     contractAddress: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85',
-    ensName: 'nick.digi',
+    dgnsName: 'nick.digi',
     tokenId: '4221908525551133525058944220830153...',
     networkName: {
       description: 'Name of the chain to query for.',
@@ -124,9 +124,9 @@ const doc = {
         url: 'https://app.dgns.domains/name/nick.digi',
         version: 0,
         background_image:
-          'https://metadata.dgns.domains/mainnet/avatar/nick.digi',
+          'https://metadata.digiv3rse.xyz/mainnet/avatar/nick.digi',
         image_url:
-          'https://metadata.dgns.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image',
+          'https://metadata.digiv3rse.xyz/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image',
       },
     },
   },

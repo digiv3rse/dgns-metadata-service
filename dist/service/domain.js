@@ -61,7 +61,7 @@ var avatar_1 = require("./avatar");
 var base_1 = require("../base");
 var fuse_1 = require("../utils/fuse");
 var namehash_1 = require("../utils/namehash");
-var eth = '0x93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae';
+var digi = '0x59939fcf25db609ecf5f5227ca8ba38955b1ae85ccfff1f8c65f64634c135017';
 var GRACE_PERIOD_MS = 7776000000; // 90 days as milliseconds
 function getDomain(provider, networkName, SUBGRAPH_URL, contractAddress, tokenId, version, loadImages) {
     if (loadImages === void 0) { loadImages = true; }
@@ -108,8 +108,8 @@ function getDomain(provider, networkName, SUBGRAPH_URL, contractAddress, tokenId
                             metadata.generateImage();
                             return [3 /*break*/, 4];
                         case 3:
-                            metadata.setBackground("https://metadata.dgns.domains/".concat(networkName, "/avatar/").concat(name));
-                            metadata.setImage("https://metadata.dgns.domains/".concat(networkName, "/").concat(contractAddress, "/").concat(hexId, "/image"));
+                            metadata.setBackground("https://metadata.digiv3rse.xyz/".concat(networkName, "/avatar/").concat(name));
+                            metadata.setImage("https://metadata.digiv3rse.xyz/".concat(networkName, "/").concat(contractAddress, "/").concat(hexId, "/image"));
                             _b.label = 4;
                         case 4: return [2 /*return*/];
                     }
@@ -122,7 +122,7 @@ function getDomain(provider, networkName, SUBGRAPH_URL, contractAddress, tokenId
                 return __generator(this, function (_b) {
                     switch (_b.label) {
                         case 0:
-                            if (!(parent.id === eth)) return [3 /*break*/, 2];
+                            if (!(parent.id === digi)) return [3 /*break*/, 2];
                             return [4 /*yield*/, (0, graphql_request_1.request)(SUBGRAPH_URL, subgraph_1.GET_REGISTRATIONS, {
                                     labelhash: labelhash,
                                 })];

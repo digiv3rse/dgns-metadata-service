@@ -49,8 +49,8 @@ var AvatarMetadata = /** @class */ (function () {
         this.defaultProvider = provider;
         this.avtResolver = new ens_avatar_1.AvatarResolver(provider, {
             ipfs: config_1.IPFS_GATEWAY,
-            apiKey: { opensea: config_1.OPDGNSEA_API_KEY },
-            urlDenyList: ['metadata.dgns.domains']
+            apiKey: { opensea: config_1.OPENSEA_API_KEY },
+            urlDenyList: ['metadata.digiv3rse.xyz']
         });
         this.uri = uri;
     }
@@ -133,7 +133,7 @@ var AvatarMetadata = /** @class */ (function () {
                                 metadata.image = metadata.image_url;
                             }
                             else if (metadata.image_data) {
-                                metadata.image = "https://metadata.dgns.domains/".concat(networkName, "/avatar/").concat(this.uri);
+                                metadata.image = "https://metadata.digiv3rse.xyz/".concat(networkName, "/avatar/").concat(this.uri);
                             }
                             else {
                                 throw new base_1.TextRecordNotFound('There is no avatar set under given address', 404);

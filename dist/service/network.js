@@ -13,7 +13,6 @@ var NODE_PROVIDERS = {
 exports.NETWORK = {
     LOCAL: 'local',
     SEPOLIA: 'sepolia',
-    GOERLI: 'goerli',
     MAINNET: 'mainnet',
 };
 function getWeb3URL(providerName, api, network) {
@@ -46,12 +45,8 @@ function getNetwork(network) {
             SUBGRAPH_URL =
                 'https://api.thegraph.com/subgraphs/name/kimhabork/dgns';
             break;
-        case exports.NETWORK.GOERLI:
-            SUBGRAPH_URL =
-                'https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli';
-            break;
         case exports.NETWORK.MAINNET:
-            SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/ensdomains/dgns';
+            SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/kimhabork/dgns';
             break;
         default:
             throw new base_1.UnsupportedNetwork("Unknown network '".concat(network, "'"), 501);

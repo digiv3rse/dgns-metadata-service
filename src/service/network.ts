@@ -17,7 +17,6 @@ const NODE_PROVIDERS = {
 export const NETWORK = {
   LOCAL  : 'local',
   SEPOLIA: 'sepolia',
-  GOERLI : 'goerli',
   MAINNET: 'mainnet',
 } as const;
 
@@ -60,12 +59,8 @@ export default function getNetwork(network: NetworkName): {
       SUBGRAPH_URL =
         'https://api.thegraph.com/subgraphs/name/kimhabork/dgns';
       break;
-    case NETWORK.GOERLI:
-      SUBGRAPH_URL =
-        'https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli';
-      break;
     case NETWORK.MAINNET:
-      SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/ensdomains/dgns';
+      SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/kimhabork/dgns';
       break;
     default:
       throw new UnsupportedNetwork(`Unknown network '${network}'`, 501);

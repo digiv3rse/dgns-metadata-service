@@ -37,9 +37,10 @@
     "tsc": "^2.0.3"
   },
   "scripts": {
-    "build": "tsc --project ./ && cpx 'src/assets/**' 'dist/assets'",
+    "build": "ENV=prod yarn docgen && tsc --project ./ && cpx 'src/assets/**' 'dist/assets'",
     "dev": "ENV=local ts-node-dev --inspect -- src/index.ts",
     "start": "node dist/index.js",
+    "postinstall": "yarn docgen",
     "deploy": "ENV=prod yarn build && gcloud app deploy --project=DiGiV3rse",
     "deploy:test": "ENV=prod yarn build && gcloud app deploy --no-promote --project=dgns-metadata-service",
     "test": "ENV=local ava -v --serial --timeout=1m",
@@ -78,8 +79,5 @@
     "require": [
       "ts-node/register/transpile-only"
     ]
-  },
-  "volta": {
-    "node": "18.15.0"
   }
 }

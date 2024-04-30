@@ -102,10 +102,10 @@ export class MockEntry {
     });
 
     (_metadata as Metadata).setImage(
-      `https://metadata.dgns.domains/goerli/${ADDRESS_NAME_WRAPPER}/${this.namehash}/image`
+      `https://metadata.digiv3rse.xyz/goerli/${ADDRESS_NAME_WRAPPER}/${this.namehash}/image`
     );
     (_metadata as Metadata).setBackground(
-      `https://metadata.dgns.domains/goerli/avatar/${name}`
+      `https://metadata.digiv3rse.xyz/goerli/avatar/${name}`
     );
 
     this.domainResponse = {

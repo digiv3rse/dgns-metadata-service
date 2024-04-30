@@ -21,8 +21,8 @@ import {
 }                         from '../utils/fuse';
 import { getNamehash }    from '../utils/namehash';
 
-const eth =
-  '0x93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae';
+const digi =
+  '0x59939fcf25db609ecf5f5227ca8ba38955b1ae85ccfff1f8c65f64634c135017';
 const GRACE_PERIOD_MS = 7776000000; // 90 days as milliseconds
 
 export async function getDomain(
@@ -98,16 +98,16 @@ export async function getDomain(
       metadata.generateImage();
     } else {
       metadata.setBackground(
-        `https://metadata.dgns.domains/${networkName}/avatar/${name}`
+        `https://metadata.digiv3rse.xyz/${networkName}/avatar/${name}`
       );
       metadata.setImage(
-        `https://metadata.dgns.domains/${networkName}/${contractAddress}/${hexId}/image`
+        `https://metadata.digiv3rse.xyz/${networkName}/${contractAddress}/${hexId}/image`
       );
     }
   }
 
   async function requestAttributes() {
-    if (parent.id === eth) {
+    if (parent.id === digi) {
       const { registrations } = await request(SUBGRAPH_URL, GET_REGISTRATIONS, {
         labelhash,
       });
