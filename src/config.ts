@@ -4,7 +4,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || 'metadata.digiv3rse.xyz';
 const ENV = process.env.ENV || 'prod'; // local/prod
-const REDIS_URL = process.env.REDIS_HOST || 'rediss://default:eaebae2da5e44ebfbf3bc32c0c09438a@caring-hippo-50012.upstash.io';
+const REDIS_HOST = process.env.REDIS_HOST || 'rediss://default:eaebae2da5e44ebfbf3bc32c0c09438a@caring-hippo-50012.upstash.io';
 
 const FONT_FOLDER = path.join((ENV === 'local' ? 'src' : 'dist'), 'assets');
 const CANVAS_FONT_PATH = path.join(FONT_FOLDER, 'Satoshi-Bold.ttf');
