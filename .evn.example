@@ -1,0 +1,6 @@
+GOOGLE_WEB3_URL=
+IPFS_GATEWAY=https://ipfs.io
+HOST=dgns-metadata.digiv3rse.xyz
+ENV=prod
+NODE_PROVIDER=geth
+NODE_PROVIDER_URL=https://eth-sepolia.g.alchemy.com/v2/qKOejal-tbfyH6_jIHxCGwExilHgqmbF
