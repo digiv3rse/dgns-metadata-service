@@ -77,7 +77,7 @@ export default function createSVGfromTemplate({
         }
       </style>
       <linearGradient id="paint0_linear" x1="190.5" y1="302" x2="-64" y2="-172.5" gradientUnits="userSpaceOnUse">
-      ${version !== Version.v1w
+      ${version !== Version.v1
       ? `<stop stop-color="#44BCF0"/>
           <stop offset="0.428185" stop-color="#628BF3"/>
           <stop offset="1" stop-color="#A099FF"/>`

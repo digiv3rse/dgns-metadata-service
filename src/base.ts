@@ -9,7 +9,6 @@ export const characterSet: { [key: string]: CharacterSet } = Object.freeze({
 
 export enum Version {
   v1,
-  v1w,
   v2,
 }
 

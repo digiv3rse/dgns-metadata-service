@@ -11,10 +11,10 @@ const endpointsFiles = ['./src/endpoint.ts'];
 
 const doc = {
   info: {
-    version: '0.0.1',
+    version: '0.0.1-alpha.1',
     title: 'DGNS Metadata Service',
     description: 'Set of endpoints to query DGNS metadata and more',
-    contact: 'contact@dgns.domains',
+    contact: 'contact@digiv3rse.xyz',
     license: 'MIT License',
     x_logo: {
       url: './src/assets/logo.svg',
@@ -33,16 +33,16 @@ const doc = {
         token_id: 'Token ID of NFT',
         reference_url:
           'Marketplace URL of NFT',
-        },
-        $name: 'Name of NFT',
-        $description:
-          "Description of NFT",
-        $attributes: 'Attributes of NFT',
-        $image: 'Image data/URL of NFT',
-        image_url: 'Image data/URL of NFT',
-        image_data: 'Image data of NFT',
-        background_color: 'Background color of NFT',
-        youtube_url: 'Youtube URL of NFT'
+      },
+      $name: 'Name of NFT',
+      $description:
+        "Description of NFT",
+      $attributes: 'Attributes of NFT',
+      $image: 'Image data/URL of NFT',
+      image_url: 'Image data/URL of NFT',
+      image_data: 'Image data of NFT',
+      background_color: 'Background color of NFT',
+      youtube_url: 'Youtube URL of NFT'
     },
     DGNSMetadata: {
       $name: 'DGNS name',
@@ -59,7 +59,7 @@ const doc = {
     tokenId: '4221908525551133525058944220830153...',
     networkName: {
       description: 'Name of the chain to query for.',
-      '@enum': ['mainnet', 'sepolia', 'ropsten', 'goerli'],
+      '@enum': ['mainnet', 'rinkeby', 'ropsten', 'goerli'],
     },
   },
   components: {
@@ -121,7 +121,7 @@ const doc = {
           },
         ],
         name_length: 4,
-        url: 'https://app.dgns.domains/name/nick.digi',
+        url: 'https://app.digiv3rse.xyz/name/nick.digi',
         version: 0,
         background_image:
           'https://metadata.digiv3rse.xyz/mainnet/avatar/nick.digi',

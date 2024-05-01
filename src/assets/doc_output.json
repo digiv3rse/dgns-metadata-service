@@ -1,10 +1,10 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "version": "0.0.1",
+    "version": "0.0.1-alpha.1",
     "title": "DGNS Metadata Service",
     "description": "Set of endpoints to query DGNS metadata and more",
-    "contact": "contact@dgns.domains",
+    "contact": "contact@digiv3rse.xyz",
     "license": "MIT License",
     "x_logo": {
       "url": "./src/assets/logo.svg",
@@ -131,9 +131,6 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Image file"
-          },
           "404": {
             "description": "No results found"
           },
@@ -151,14 +148,14 @@
     },
     "/{networkName}/{contractAddress(0x[a-fA-F0-9]{40})}/{tokenId}/rasterize": {
       "get": {
-        "description": "DGNS NFT image rasterization",
+        "description": "",
         "parameters": [
           {
             "name": "networkName",
             "in": "path",
             "required": true,
             "schema": {
-              "$ref": "#/components/schemas/networkName"
+              "type": "string"
             }
           },
           {
@@ -173,15 +170,6 @@
             "name": "tokenId",
             "in": "path",
             "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/tokenId"
-            },
-            "type": "string",
-            "description": "Labelhash(v1) /Namehash(v2) of your DGNS name.\n\nMore: https://docs.dgns.domains/contract-api-reference/name-processing#hashing-names"
-          },
-          {
-            "name": "{}",
-            "in": "query",
             "schema": {
               "type": "string"
             }
@@ -287,12 +275,11 @@
     },
     "/queryNFT": {
       "get": {
-        "description": "Query endpoint for NFT URIs",
+        "description": "",
         "parameters": [
           {
             "name": "uri",
             "in": "query",
-            "description": "NFT URI as defined under CAIP-22 for erc721 assets and CAIP-29 for erc1155 assets.",
             "schema": {
               "type": "string"
             }
@@ -395,7 +382,7 @@
             }
           ],
           "name_length": 4,
-          "url": "https://app.dgns.domains/name/nick.digi",
+          "url": "https://app.digiv3rse.xyz/name/nick.digi",
           "version": 0,
           "background_image": "https://metadata.digiv3rse.xyz/mainnet/avatar/nick.digi",
           "image_url": "https://metadata.digiv3rse.xyz/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image"
@@ -559,7 +546,7 @@
         "type": "string",
         "enum": [
           "mainnet",
-          "sepolia",
+          "rinkeby",
           "ropsten",
           "goerli"
         ],

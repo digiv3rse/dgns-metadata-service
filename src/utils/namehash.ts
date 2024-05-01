@@ -1,11 +1,11 @@
-import { namehash }                 from '@ensdomains/ensjs/utils';
+import { namehash }                 from '@ensdomains/ensjs/utils/normalise';
 import { utils, BigNumber, ethers } from 'ethers';
 import { Version }                  from '../base';
 
 const sha3 = require('js-sha3').keccak_256;
 
-const digi0x =
-  '38434b1310834060219874d3d1f48ddb0c17d6af029f200885fc57de32c4fc0b';
+const eth0x =
+  '4f5b812789fc606be1b3b16908db13fc7a9adf7ca72641f84d75b47069d3d7f0';
 
 export function constructEthNameHash(
   tokenId: string,
@@ -16,7 +16,7 @@ export function constructEthNameHash(
   const label0x = utils
     .hexZeroPad(utils.hexlify(BigNumber.from(tokenId)), 32)
     .replace('0x', '');
-  const labels = [label0x, digi0x];
+  const labels = [label0x, eth0x];
 
   // 0 x 64
   let node = '0000000000000000000000000000000000000000000000000000000000000000';

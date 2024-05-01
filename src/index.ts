@@ -27,7 +27,7 @@ const setCacheHeader = function (
 };
 
 const app = express();
-app.use(cors());
+app.options('*', (cors()));
 
 app.use(
   helmet.contentSecurityPolicy({

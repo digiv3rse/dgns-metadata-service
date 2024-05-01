@@ -24,7 +24,7 @@ async function checkV1Contract(
   try {
     const nftOwner = await contract.ownerOf(_tokenId);
     if (nftOwner === ADDRESS_NAME_WRAPPER) {
-      return { tokenId: _tokenId, version: Version.v1w };
+      return { tokenId: _tokenId, version: Version.v1 };
     }
     const wrapperContract = new ethers.Contract(
       nftOwner,
@@ -37,7 +37,7 @@ async function checkV1Contract(
       INAMEWRAPPER
     );
     assert(isInterfaceSupported);
-    return { tokenId: _tokenId, version: Version.v1w };
+    return { tokenId: _tokenId, version: Version.v1 };
   } catch (error) {
     console.warn(`error for ${contract.address}`, error);
   }

@@ -19,7 +19,7 @@ import {
 }                               from './interface';
 
 
-const { SUBGRAPH_URL: subgraph_url } = getNetwork('goerli');
+const { SUBGRAPH_URL: subgraph_url } = getNetwork('sepolia');
 const SUBGRAPH_URL = new URL(subgraph_url);
 const SUBGRAPH_PATH = SUBGRAPH_URL.pathname + SUBGRAPH_URL.search;
 
